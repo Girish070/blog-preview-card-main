@@ -1,0 +1,97 @@
+@font-face {
+  font-family: figtree;
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: figtree;
+  box-sizing: border-box;
+}
+
+@media (min-width: 760px) {
+  body{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+}
+
+ul{
+  list-style-type: none; 
+}
+
+body{
+  background-color: hsl(47, 88%, 63%);
+  padding: 5rem 1rem;
+}
+
+.container{
+  max-width: 500px;
+  margin-inline: auto;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  box-shadow: 10px 10px 0 black;
+}
+
+.container div:first-child img{
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container div:nth-child(2) h2{
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  font-size: 1rem;
+  padding: 3px 8px;
+  margin: 1.5rem 0 1rem;
+  border-radius: 3px;
+}
+
+.container div:nth-child(2) p.published-at{
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.container div:nth-child(2) h1{
+  margin-bottom: 1rem;
+}
+
+.container div:nth-child(2) h1:hover{
+  color: hsl(47, 88%, 63%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+  .container div:nth-child(2) p{
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.container div:nth-child(2) ul{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container div:nth-child(2) ul li:nth-child(2){
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+.attribution {
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
